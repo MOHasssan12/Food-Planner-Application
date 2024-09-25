@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <string name="allproducts">All Products</string>
+    <string name="favprod">Favirotes Products</string>
+    <string name="exit">Exit</string>
+    <string name="title">Tilte</string>
+    <string name="brand">Brand</string>
+    <string name="price">Price</string>
+    <string name="addtofav">Add To Favirotes</string>
+    <string name="delete">Delete</string>
+    <string name="title2">Title</string>
+    <string name="brand2">Brand</string>
+    <string name="price2">Price</string>
+    <string name="inspirationmeal">Inspiration Meal</string>
+    <string name="category">"Category "</string>
+    <string name="Description">Description\n</string>
+    <string name="showcategory">Show All Categories</string>
+</resources>

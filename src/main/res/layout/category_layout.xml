@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewCat"
+        android:layout_width="160dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/category"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCat"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCat" />
+
+    <TextView
+        android:id="@+id/editCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/txtcategory"
+        app:layout_constraintTop_toTopOf="@+id/txtcategory" />
+
+    <TextView
+        android:id="@+id/editDesc"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/txtDesc"
+        app:layout_constraintTop_toTopOf="@+id/txtDesc" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/Description"
+        app:layout_constraintStart_toStartOf="@+id/txtcategory"
+        app:layout_constraintTop_toBottomOf="@+id/txtcategory" />
+
+    <Button
+        android:id="@+id/btnShowlist"
+        android:layout_width="199dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:text="Show Meals"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCat"
+        app:layout_constraintTop_toBottomOf="@+id/editDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

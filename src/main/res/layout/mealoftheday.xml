@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RandomMeal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/inspirMeal"
+        android:layout_width="292dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtMealOfTheDay"
+        android:layout_width="191dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="casual"
+        android:text="Meal Of The Day"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStrMeal"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="164dp"
+        android:fontFamily="casual"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspirMeal" />
+
+    <Button
+        android:id="@+id/btnShowRandom"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:text="Show Details"
+        app:layout_constraintStart_toEndOf="@+id/txtStrMeal"
+        app:layout_constraintTop_toTopOf="@+id/txtStrMeal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

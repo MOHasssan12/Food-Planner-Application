@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/editCountrymeal"
+        android:layout_width="118dp"
+        android:layout_height="21dp"
+        app:layout_constraintStart_toStartOf="@+id/editCateg"
+        app:layout_constraintTop_toTopOf="@+id/Country" />
+
+    <TextView
+        android:id="@+id/editCateg"
+        android:layout_width="118dp"
+        android:layout_height="17dp"
+        app:layout_constraintStart_toStartOf="@+id/editTitlemeal"
+        app:layout_constraintTop_toTopOf="@+id/txtcateg" />
+
+    <TextView
+        android:id="@+id/txtcateg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Category"
+        app:layout_constraintStart_toStartOf="@+id/txtTiltemeal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiltemeal" />
+
+    <ImageView
+        android:id="@+id/imageViewmeal"
+        android:layout_width="117dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtTiltemeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="33dp"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/imageViewmeal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Country"
+        app:layout_constraintStart_toStartOf="@+id/txtcateg"
+        app:layout_constraintTop_toBottomOf="@+id/txtcateg" />
+
+    <TextView
+        android:id="@+id/editTitlemeal"
+        android:layout_width="119dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTiltemeal"
+        app:layout_constraintTop_toTopOf="@+id/txtTiltemeal" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="23dp"
+        android:text="Show Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCountrymeal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

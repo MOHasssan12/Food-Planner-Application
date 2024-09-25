@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/IngredientsandMeasures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingredients and Measures"
+        app:layout_constraintStart_toStartOf="@+id/txtCountry"
+        app:layout_constraintTop_toBottomOf="@+id/txtCountry" />
+
+    <ImageView
+        android:id="@+id/mealimage"
+        android:layout_width="374dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtTilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Name "
+        app:layout_constraintStart_toStartOf="@+id/mealimage"
+        app:layout_constraintTop_toBottomOf="@+id/mealimage" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Category"
+        app:layout_constraintStart_toStartOf="@+id/txtTilte"
+        app:layout_constraintTop_toBottomOf="@+id/txtTilte" />
+
+    <TextView
+        android:id="@+id/editCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/editCate"
+        app:layout_constraintTop_toTopOf="@+id/txtCountry" />
+
+    <TextView
+        android:id="@+id/editCate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toTopOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Country"
+        app:layout_constraintStart_toStartOf="@+id/txtCategory"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Instructions"
+        app:layout_constraintStart_toStartOf="@+id/IngredientsandMeasures"
+        app:layout_constraintTop_toBottomOf="@+id/IngredientsandMeasures" />
+
+    <TextView
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTilte"
+        app:layout_constraintTop_toTopOf="@+id/txtTilte" />
+
+    <TextView
+        android:id="@+id/editInstruction"
+        android:layout_width="297dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/txtInstructions"
+        app:layout_constraintTop_toTopOf="@+id/txtInstructions" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="46dp"
+        android:text="Add To Favirot"
+        app:layout_constraintStart_toEndOf="@+id/txtCategory"
+        app:layout_constraintTop_toBottomOf="@+id/mealimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
